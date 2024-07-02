@@ -9,23 +9,62 @@
   </head>
   <body>
     <!-- header -->
-     <header class="py-3 mb-4 border-bottom">
-      <div class="container d-flex flex-wrap justify-content-center">
-        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4">Double header</span>
-        </a>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search" spellcheck="false" data-ms-editor="true">
-        </form>
+     <header class="py-3 mb-4 border-bottom bg-success">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+        </ul>
       </div>
      </header>
     <!-- main -->
      <main>
         <!-- ภาพสไลด์ -->
         <section id="slide">
-        
-        </section>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/ลิง.jpg"width="100%" height="100%" >
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/ลิงแสม.jpg" width="100%" height="100%" >
+                <div class="container">
+                  <div class="carousel-caption">  
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/Gorilla.jpg" width="100%" height="100%" >
+                <div class="container">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div></section>
         <!-- ข่าว -->
         <section id="new">
 
@@ -36,7 +75,7 @@
     <!-- การเรียกใช้ js  ของ bootstap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- bootstrap  -->
-    <section id="test">
+    <!--  <section id="test">
         <div class="container">
           <p class="bg-danger">chetsadaphon</p>
           <p class="bg-info ">chetsadaphon</p>
@@ -45,8 +84,8 @@
           <p class="bg-warning text-lowercase">chetsadaphon</p>
         </div>
        </section>
-       <!-- grid system -->
-       <section id="column">
+        grid system -->
+       <!-- <section id="column">
              <div class="container">
                 <div class="row">
                    <div class="col-sm-4 bg-success text-white">col 4</div>
@@ -58,7 +97,7 @@
                 </div>
              </div>
        </section>
-       <!-- 
+      
        1. class container
        2. class row
        3. class column
